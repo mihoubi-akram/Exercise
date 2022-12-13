@@ -7,7 +7,7 @@ class Disque {
     this.priority = priority;
   }
 }
-//classe Stack pour créer les trois Pilonnes x,y,z
+//classe Pilonnes pour créer les trois Pilonnes x,y,z
 class Pilonnes {
   constructor() {
     this.pilonne = [];
