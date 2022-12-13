@@ -13,7 +13,7 @@ class Pilonnes {
     this.pilonne = [];
   }
 
-  // function add pour ajouter des éléments selon leur priorité.
+  // function add : ajoute le disque sur la pilonne ,  
   add(disque) {
     if (!this.isEmpty() && this.lastE()?.prio > disque.prio) {
       console.log("can't add this élément: Priority is not respected");
@@ -23,21 +23,21 @@ class Pilonnes {
     return true;
   }
 
-  //Function pop supprime le dernier élément et retourne cet élément, si l'élément n'existe pas elle retourne false.
+  //function pop supprime le dernier élément et retourne cet élément, si l'élément n'existe pas elle retourne false.
   pop() {
     return this.pilonne.pop();
   }
 
-  //Function isEmpty returne true si la pilonne est vide.
+  //Function isEmpty retourne true si la pilonne est vide.
   isEmpty() {
     return this.pilonne.length == 0;
   }
 
-  //Function lastE retoune le dernier élément de la pilonne , retourne false si la pilonne est vide
+  //function lastE retourne le dernier élément de la pilonne , retourne false si la pilonne est vide
   lastE() {
     this.isEmpty ? false : this.pilonne[this.pilonne.length - 1];
   }
-  //Function displayE pour afficher les element de la pilonne.
+  //function displayE pour afficher les éléments de la pilonne.
   displayE() {
     this.pilonne.forEach(el => console.log(el));
   }
@@ -58,7 +58,7 @@ let x = new Pilonnes();
 let y = new Pilonnes();
 let z = new Pilonnes();
 
-//création de 3 Disques A,B,C
+//Création de 3 Disques A,B,C
 const a = new Disque('A', 1);
 const b = new Disque('B', 2);
 
